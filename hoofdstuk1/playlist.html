@@ -1,0 +1,220 @@
+<!-- website RadioGaGa -->
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+		<meta http-equiv="Content-Type"
+		content="text/html";
+		charset=UTF-8">
+		<link rel="stylesheet" href="style.css">
+<meta name="keywords"
+	content="RadioGaGa, muziek, playlist">
+<title>RadioGaGa</title>
+	<title>RadioGaGa</title>
+</head>
+	<body>
+ 			<nav>
+ 				<ul>
+ 					<li><a href="index.html">Home</a></li>
+ 					<li><a href="playlist.html">Playlist</a></li>
+ 					<li><a href="formulier.html">Formulier</a></li>
+ 					<li><a href="contact.html">Contact</a></li>
+				</ul>
+ 			</nav>
+ 			<div id="logo">
+ 				<img width="200px" src="https://www.tcrdocent.nl/wigmans/Bestanden/Frontend%20Development/images/logo-small.png" alt="x">
+ 			</div>
+ 			<main>
+				<div id="albums"><h3>albums</h3>
+				<ul>
+					<li>
+						<a onclick=
+						"document.getElementbyId('album-1'.style.display='block');
+						document.getElementbyId('album-2'.style.display='none';
+						document.getElementbyId('album-1'.style.display='none';">
+						<img src="https://www.tcrdocent.nl/wigmans/Bestanden/Frontend%20Development/images/album-1.jpg"></a>
+					</li>
+					<li>
+						<a onclick=
+						"document.getElementbyId('album-1'.style.display='block');
+						document.getElementbyId('album-2'.style.display='none';
+						document.getElementbyId('album-1'.style.display='none';">
+						<img src="https://www.tcrdocent.nl/wigmans/Bestanden/Frontend%20Development/images/album-2.jpg"></a>
+					</li>
+				<li>
+								<li>
+						<a onclick=
+						"document.getElementbyId('album-1'.style.display='block');
+						document.getElementbyId('album-2'.style.display='none';
+						document.getElementbyId('album-1'.style.display='none';">
+						<img src="https://www.tcrdocent.nl/wigmans/Bestanden/Frontend%20Development/images/album-3.jpg"></a>
+					</li>
+				</ul>
+				</div>
+				</div> <!-- einde albums -->
+				<div id="multimedia">
+				<div id="album-1" style='display: block'>
+					<video controls width="80%" preload poster="https://www.tcrdocent.nl/wigmans/Bestanden/Frontend%20Development/images/album-1.jpg">
+						<source src="https://www.tcrdocent.nl/wigmans/Bestanden/Frontend%20Development/trailer.mp4" type="video/webm"/>
+						<source src="https://www.tcrdocent.nl/wigmans/Bestanden/Frontend%20Development/trailer.ogv" type="video/ogg"/>
+						<source src="videos/trailer.mp4" type="video/mp4"/>
+					</video>
+					<table>
+						<thead>
+							<tr>
+								<th>Track</th><th>Titel</th><th>Tijd</th><th>Plays</th>
+							</tr>
+						</thead>
+						</tbody>
+							<tr>
+								<td>1</td>
+								<td>Titel 1</td>
+								<td>02:08</td>
+								<td>
+							<a onclick="
+							document.getElementById('audio').src='https://www.tcrdocent.nl/wigmans/Bestanden/Frontend%20Development/muziek/2121.mp3';
+							v=document.getElementById('audio');
+							v.play();">|></a>
+									</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Titel 2</td>
+									<td>03:18</td>
+									<td>
+							<a onclick="
+							document.getElementById('audio').src='https://www.tcrdocent.nl/wigmans/Bestanden/Frontend%20Development/muziek/Vete%20De%20Mi%E2%95%A0%C3%BC.m4a';
+							v=document.getElementById('audio');
+							v.play();">|></a>
+								</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Titel 3</td>
+									<td>02:08</td>
+									<td>
+							<a onclick="
+							document.getElementById('audio').src='muziek/2121.mp3';
+							v=document.getElementById('audio')
+							v.play()">|></a>
+								</td>
+								</tr>
+							</tbody>
+						</table>
+						<audio style="display: block" id="audio" src="muziek/2121.mp3" controls>
+						</audio>
+						</div> <!-- einde album-1 -->
+						<div id="album-2" style="display: none">
+							<div id="album-1" style='display: block'>
+								<video controls width="80%" preload poster="https://www.tcrdocent.nl/wigmans/Bestanden/Frontend%20Development/images/album-2.jpg">
+									<source src="videos/trailer.webm" type="video/webm"/>
+									<source src="videos/trailer.ogv" type="video/ogg"/>
+									<source src="videos/trailer.mp4" type="video/mp4"/>
+								</video>
+								<table>
+									<thead>
+										<tr>
+											<th>Track</th><th>Titel</th><th>Tijd</th><th>Plays</th>
+										</tr>
+									</thead>
+									</tbody>
+										<tr>
+											<td>1</td>
+											<td>Titel 1</td>
+											<td>02:08</td>
+											<td>
+										<a onclick="
+										document.getElementById('audio').src='muziek/2121.mp3';
+										v=document.getElementById('audio');
+										v.play();">|></a>
+												</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>Titel 2</td>
+												<td>03:18</td>
+												<td>
+										<a onclick="
+										document.getElementById('audio').src='muziek/2121.mp3';
+										v=document.getElementById('audio');
+										v.play();">|></a>
+											</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>Titel 3</td>
+												<td>02:08</td>
+												<td>
+										<a onclick="
+										document.getElementById('audio').src='muziek/2121.mp3';
+										v=document.getElementById('audio')
+										v.play()">|></a>
+											</td>
+											</tr>
+										</tbody>
+									</table>
+									<audio style="display: block" id="audio" src="muziek/2121.mp3" controls>
+									</audio>
+						</div> <!-- einde album-2 -->
+						<div id="album-3" style="display: none">
+							<div id="album-1" style='display: block'>
+								<video controls width="80%" preload poster="https://www.tcrdocent.nl/wigmans/Bestanden/Frontend%20Development/images/album-3.jpg">
+									<source src="https://www.tcrdocent.nl/wigmans/Bestanden/Frontend%20Development/trailer.mp4" type="video/webm"/>
+									<source src="https://www.tcrdocent.nl/wigmans/Bestanden/Frontend%20Development/trailer.ogv" type="video/ogg"/>
+									<source src="" type="video/mp4"/>
+								</video>
+								<table>
+									<thead>
+										<tr>
+											<th>Track</th><th>Titel</th><th>Tijd</th><th>Plays</th>
+										</tr>
+									</thead>
+									</tbody>
+										<tr>
+											<td>1</td>
+											<td>Titel 1</td>
+											<td>02:08</td>
+											<td>
+										<a onclick="
+										document.getElementById('audio').src='https://www.tcrdocent.nl/wigmans/Bestanden/Frontend%20Development/muziek/2121.mp3';
+										v=document.getElementById('audio');
+										v.play();">|></a>
+												</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>Titel 2</td>
+												<td>03:18</td>
+												<td>
+										<a onclick="
+										document.getElementById('audio').src='https://www.tcrdocent.nl/wigmans/Bestanden/Frontend%20Development/muziek/Vete%20De%20Mi%E2%95%A0%C3%BC.m4a';
+										v=document.getElementById('audio');
+										v.play();">|></a>
+											</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>Titel 3</td>
+												<td>02:08</td>
+												<td>
+										<a onclick="
+										document.getElementById('audio').src='https://www.tcrdocent.nl/wigmans/Bestanden/Frontend%20Development/muziek/Vete%20De%20Mi%E2%95%A0%C3%BC.m4a';
+										v=document.getElementById('audio')
+										v.play()">|></a>
+											</td>
+											</tr>
+										</tbody>
+									</table>
+									<audio style="display: block" id="audio" src="https://www.tcrdocent.nl/wigmans/Bestanden/Frontend%20Development/muziek/Vuelvo%20Al%20Sur.m4a" controls>
+									</audio>
+						</div> <!-- einde album-3 -->
+						</div> <!-- einde multimedia -->
+						</main>
+				<footer>
+				<a href="#top"><img src="https://www.tcrdocent.nl/wigmans/Bestanden/Frontend%20Development/images/twitter.png" alt="x" ></a>
+				<a href="#top"><img src="https://www.tcrdocent.nl/wigmans/Bestanden/Frontend%20Development/images/youtube.png" alt="x" ></a>
+				<a href="#top"><img src="https://www.tcrdocent.nl/wigmans/Bestanden/Frontend%20Development/images/facebook.png" alt="x" ></a>
+				<p>Copyright &copy; 2019 <i>Ontworpen door: Stefan Mokhamsing</i>
+				</footer>
+ 			</main>
+ 	</body>
+ </html>
