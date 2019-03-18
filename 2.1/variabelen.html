@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta http-equiv="Content-Type"
+		content="text/html;
+		charset=UTF-8">
+	<title>Variabelen</title>
+</head>
+<body>
+	<script>
+	var voornaam = "Carl";
+	var achternaam = "Petersen";
+	var schoolgeld = 1000;
+	var boekengeld = 100;
+	var bedrag = schoolgeld + boekengeld;
+	var studiefinanciering = 600;
+	var totaal = bedrag - studiefinanciering;
+	var volledigenaam = voornaam + "<br />" + achternaam;
+	document.write(
+	"<p>Opgave 8</p>" + volledigenaam +
+	"<br>Totaal te betalen: " + totaal);
+	</script>
+	<script>
+		var opgave= "opgave 9";
+	var achternaam2 = "Bolt";
+	var voornaam2 = "Zakaria ";
+	var nederlands = 9;
+	var engels = 8;
+	var rekenen = 7;
+	var gemiddelde = nederlands + engels + rekenen;
+	var cijfer = gemiddelde / 3;
+	document.write(opgave + "<br>" + voornaam2 + achternaam2 + "<br>" + "nederlands:  " + nederlands + "<br>" + "engels: " + engels + "<br>" + "rekenen: " +rekenen + "<br>" + "gemiddelde: " + cijfer);
+	</script>
+		 <script>
+    // Variables gebruikt voor script
+    var naam = prompt("Voer je eigen naam in");
+    var aantal = parseInt(prompt("Aantal boeken te bestellen?"));
+    var titel = "javascript";
+    var prijs = 29.90;
+    document.write("<br>Bedankt voor je bestelling: " + naam);
+    document.write("<br>Boektitel is: " + titel);
+    document.write("<br>Aantal te bestellen : " + aantal);
+    document.write("<br>Prijs per boek is : " + prijs.toFixed(2));
+          bedrag = aantal * prijs;
+    document.write("<br>Bedrag is :  " + bedrag.toFixed(2));
+          btw = bedrag*0.19;
+    document.write("<br>BTW is : " + btw.toFixed(2));
+          totaal = bedrag + btw;
+    document.write("<br>Totaal inclusief BTW is : " + totaal.toFixed(2));
+  </script>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta http-equiv="content-type"
+						content="text/html";
+						charset="utf-8">
+	<title>Datatypes</title>
+</head>
+<body>
+	<script>
+	var naam = "Carl";
+	var adres = "Kruislaan 111";
+	document.write(
+		"<br />Opgave 10: Datatype van naam is: "+
+		typeof naam);
+	</script>
+</body>
+</html>
