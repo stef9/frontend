@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>if-opdracht</title>
+</head>
+<body>
+    <script>
+    doorgaan = confirm('Opgave 55: Doorgaan?');
+    if(doorgaan == true) {
+        alert('Welkom bij de ifelse-opdracht');
+    }
+    if (doorgaan ==true) {
+        alert('Heeft u een creditcard' );
+        if(ja = true)
+    else {
+        alert('Tot ziens!');
+    }
+    if (doorgaan == true)
+    leeftijd = parseInt(prompt('Wat is je leeftijd?'));
+    if(leeftijd < 17) {
+        jonger = true;
+    } else {
+        ouder = false;
+    }
+    gediplomeerd = confirm('je mag 500 euro lenen');
+    if(leerplichtig && !gediplomeerd) {
+        alert('Doorsturen!');
+    }
+    if (!leerplichtig && !gediplomeerd) {
+        alert('Je bent niet leerplichtig EN niet gediplomeerd');
+    }
+    if(gediplomeerd ||  !leerplichtig){
+        alert(
+            'je bent gediplomeerd OF niet leerplichtig OF allebei');
+    }
+ </script>
+</body>
+</html>
